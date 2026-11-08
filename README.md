@@ -1,35 +1,23 @@
-# Smart Irrigation System Using IoT and Machine Learning
+# Human Activity Recognition — Phase 1 (Software-only)
 
 **Course:** ML 402331 — IoT Machine Learning Project  
-**Phase:** 1 — Idea, Problem and Setup  
-**Track:** Hardware
+**Student:** Essam Taha  
+**University ID:** 2410014  
+**Selected assignment idea:** #6 — Human Activity Recognition  
+**Track:** Software-only (subject to instructor approval)
 
-## Project question
-Can an IoT-based machine-learning system accurately classify whether a selected potted plant needs watering using soil-moisture, temperature and relative-humidity readings?
+## Project
+Classify six activities (walking, walking upstairs, walking downstairs, sitting, standing, laying) from smartphone accelerometer and gyroscope data.
+
+**Public dataset:** [UCI Human Activity Recognition Using Smartphones](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones). It contains 10,299 labeled records and 561 derived features.
+
+**Research question:** How accurately can machine-learning models classify daily human activities from smartphone accelerometer and gyroscope features in a public sensor dataset?
 
 ## Phase 1 files
-- `Phase1_Proposal_Smart_Irrigation.pdf` — two-page proposal and preliminary bill of materials.
-- `Phase1_Starter_Linear_Regression.ipynb` — Colab-ready course starter notebook.
-- `BILL_OF_MATERIALS.md` — preliminary hardware list and estimated costs.
+- `Phase1_Proposal_HAR.md` — proposal text, data plan and three related works.
+- `Phase1_Starter_Linear_Regression.ipynb` — single-code-cell introductory linear regression using the public diabetes dataset, as required for Phase 1.
+- `Phase1_One_Cell_Code.py` — same code in a regular Python file.
 
-## Planned hardware
-ESP32 development board, capacitive soil-moisture sensor, DHT22 temperature/humidity sensor, and optional relay/pump components for the later physical prototype.
+Open the notebook in [Google Colab](https://colab.research.google.com/) and run its code cell.
 
-## Planned ML task
-Supervised binary classification:
-- `needs_watering = 1`: watering is required.
-- `needs_watering = 0`: watering is not required.
-
-Planned features: soil moisture, ambient temperature, relative humidity, and optionally hour of day.
-
-## Data plan
-Collect at least 500 labeled sensor rows. Calibrate the soil-moisture sensor in the selected soil and apply one documented plant-specific labeling protocol consistently. The target dataset will be collected from the team's own device in a later phase.
-
-## Starter notebook note
-The included notebook uses scikit-learn's public diabetes regression dataset to run the Phase 1 linear-regression setup exercise. It is not the irrigation classifier.
-
-## Before submission
-1. Add the actual team member names to the proposal.
-2. Open the notebook in Google Colab and run all cells.
-3. Obtain instructor approval for the hardware track and project idea.
-4. Submit using the course's required ZIP naming convention: `ML402331_Phase1_<TeamName>.zip`.
+**Scope:** Phase 1 only. The HAR classifier, simulated streaming, model comparisons and final demonstration belong to later phases. No hardware is needed.
