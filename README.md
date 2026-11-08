@@ -18,6 +18,6 @@ Classify six activities (walking, walking upstairs, walking downstairs, sitting,
 - `Phase1_Starter_Linear_Regression.ipynb` — single-code-cell introductory linear regression using the public diabetes dataset, as required for Phase 1.
 - `Phase1_One_Cell_Code.py` — same code in a regular Python file.
 
-Open the notebook in [Google Colab](https://colab.research.google.com/) and run its code cell.
+Open the notebook in [Google Colab](https://colab.research.google.com/drive/1Ebc5vA9Eep6Ud-BgL24rx6hokR14JUyd?authuser=2) and run its code cell.
 
 **Scope:** Phase 1 only. The HAR classifier, simulated streaming, model comparisons and final demonstration belong to later phases. No hardware is needed.
